@@ -25,10 +25,15 @@ sh = gc.open_by_key('1KkxL8-h0JZqSI2u2wwV4i7CP-duIoNHU5cfBHf4s0EI')
 
 df = pd.DataFrame(sh.get_worksheet(1).get_all_records())
 
-order_id = int(st.text_input("Scan Order ID"))
+order_id = st.text_input("Scan Order ID")
 but = st.button("Apply")
 
 def veiw_1():
-  if len(df[df['Order ID'] == order_id]) == 1: 
+  if len(df[df['Order ID'] == int(order_id)]) == 1: 
       order =  df[df['Order ID'] == order_id]
       st.dataframe(order)
+
+
+if but == True:
+  veiw_1()
+
