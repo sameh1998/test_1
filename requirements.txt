@@ -1,2 +1,2 @@
 gspread
-gspread_dataframe
+gspread-dataframe
