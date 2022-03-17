@@ -33,6 +33,5 @@ def veiw_1():
   else:
     st.info("Please enter a valid order_id")
 
-
- veiw_1()
+veiw_1()
 
