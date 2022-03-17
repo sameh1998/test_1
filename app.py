@@ -4,9 +4,7 @@ import gspread
 from gspread_dataframe import set_with_dataframe
 import requests as rq
 import gspread_dataframe as gd
-import dataframe_image as dfi
-import json
-from google.oauth2.service_account import Credentials
+
 
 file ={
   "type": "service_account",
