@@ -34,6 +34,5 @@ def veiw_1():
     st.info("Please enter a valid order_id")
 
 
-if but == True:
-  veiw_1()
+ veiw_1()
 
