@@ -27,7 +27,7 @@ order_id = st.text_input("Scan Order ID")
 but = st.button("Apply")
 
 def veiw_1():
-  if len(df[df['Order ID'] == int(order_id)]) == 1: 
+  if len(df[df['Order ID'] == order_id]) == 1: 
       order =  df[df['Order ID'] == order_id]
       st.dataframe(order)
 
